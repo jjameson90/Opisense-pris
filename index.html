@@ -464,6 +464,35 @@ section { padding: 108px 24px; }
 }
 .is-featured .pkg-foot-value { background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.92); }
 
+/* Persona box */
+.pkg-persona {
+  margin-top: 16px;
+  padding: 11px 13px;
+  background: var(--sand-100);
+  border-radius: 10px;
+  border: 1px solid var(--rule);
+}
+.pkg-persona-label {
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--green-600);
+  margin-bottom: 4px;
+}
+.pkg-persona-text {
+  font-size: 11.5px;
+  font-weight: 300;
+  color: var(--mid);
+  line-height: 1.5;
+}
+.is-featured .pkg-persona {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.15);
+}
+.is-featured .pkg-persona-label { color: var(--green-300); }
+.is-featured .pkg-persona-text  { color: rgba(255,255,255,0.7); }
+
 .konsern-contact-btn {
   display: inline-block;
   font-family: var(--sans);
@@ -1059,7 +1088,7 @@ footer {
       <!-- GRUNNLAG -->
       <div class="pkg-card tier-1">
         <div class="pkg-name">Grunnlag</div>
-        <div class="pkg-tagline">For virksomheter som ønsker å starte</div>
+        <div class="pkg-tagline">Kom i gang med AI-assistert drift</div>
         <div class="pkg-price-block">
           <div class="pkg-price">4 900</div>
           <div class="pkg-price-unit">kr / måned eks. mva</div>
@@ -1068,22 +1097,22 @@ footer {
         <div class="pkg-sep"></div>
         <ul class="pkg-rows">
           <li class="pkg-row"><span class="pkg-row-label">Brukere</span><span class="pkg-row-value">Inntil 8</span></li>
-          <li class="pkg-row"><span class="pkg-row-label">Møter / mnd</span><span class="pkg-row-value">25</span></li>
+          <li class="pkg-row"><span class="pkg-row-label">Møter / mnd</span><span class="pkg-row-value">25 <small style="font-weight:300;color:var(--muted);">≈ 6/uke</small></span></li>
           <li class="pkg-row"><span class="pkg-row-label">Dokumentanalyser</span><span class="pkg-row-value">150</span></li>
           <li class="pkg-row"><span class="pkg-row-label">Agenthandlinger</span><span class="pkg-row-value">1 000</span></li>
           <li class="pkg-row"><span class="pkg-row-label">RAG-søk</span><span class="pkg-row-value">500</span></li>
           <li class="pkg-row"><span class="pkg-row-label">Data</span><span class="pkg-row-value">25 GB</span></li>
         </ul>
-        <div class="pkg-foot">
-          <span class="pkg-foot-label">Effektiv pris / bruker</span>
-          <span class="pkg-foot-value">613 kr</span>
+        <div class="pkg-persona">
+          <div class="pkg-persona-label">Passer for</div>
+          <div class="pkg-persona-text">Advokatfirma, regnskapskontor eller liten fagbedrift med 3–8 ansatte som vil automatisere møtedokumentasjon.</div>
         </div>
       </div>
 
       <!-- VEKST -->
       <div class="pkg-card tier-2">
         <div class="pkg-name">Vekst</div>
-        <div class="pkg-tagline">For selskaper i utvikling</div>
+        <div class="pkg-tagline">Skalér arbeidsflyten på tvers av team</div>
         <div class="pkg-price-block">
           <div class="pkg-price">12 900</div>
           <div class="pkg-price-unit">kr / måned eks. mva</div>
@@ -1092,15 +1121,15 @@ footer {
         <div class="pkg-sep"></div>
         <ul class="pkg-rows">
           <li class="pkg-row"><span class="pkg-row-label">Brukere</span><span class="pkg-row-value">Inntil 20</span></li>
-          <li class="pkg-row"><span class="pkg-row-label">Møter / mnd</span><span class="pkg-row-value">80</span></li>
+          <li class="pkg-row"><span class="pkg-row-label">Møter / mnd</span><span class="pkg-row-value">80 <small style="font-weight:300;color:var(--muted);">≈ 20/uke</small></span></li>
           <li class="pkg-row"><span class="pkg-row-label">Dokumentanalyser</span><span class="pkg-row-value">500</span></li>
           <li class="pkg-row"><span class="pkg-row-label">Agenthandlinger</span><span class="pkg-row-value">5 000</span></li>
           <li class="pkg-row"><span class="pkg-row-label">RAG-søk</span><span class="pkg-row-value">2 000</span></li>
           <li class="pkg-row"><span class="pkg-row-label">Data</span><span class="pkg-row-value">100 GB</span></li>
         </ul>
-        <div class="pkg-foot">
-          <span class="pkg-foot-label">Effektiv pris / bruker</span>
-          <span class="pkg-foot-value">645 kr</span>
+        <div class="pkg-persona">
+          <div class="pkg-persona-label">Passer for</div>
+          <div class="pkg-persona-text">Konsulentselskap eller prosjektbasert virksomhet med 10–20 ansatte som håndterer mange klientmøter og dokumenter.</div>
         </div>
       </div>
 
@@ -1108,48 +1137,48 @@ footer {
       <div class="pkg-card tier-3 is-featured">
         <div class="pkg-best-badge">Anbefalt</div>
         <div class="pkg-name" style="color:#FFFFFF;">Struktur</div>
-        <div class="pkg-tagline" style="color:rgba(255,255,255,0.75);">For etablerte virksomheter</div>
+        <div class="pkg-tagline" style="color:rgba(255,255,255,0.75);">Etablert drift med full AI-integrasjon</div>
         <div class="pkg-price-block">
-          <div class="pkg-price" style="color:#FFFFFF;">28 900</div>
+          <div class="pkg-price" style="color:#FFFFFF;">34 900</div>
           <div class="pkg-price-unit" style="color:rgba(255,255,255,0.75);">kr / måned eks. mva</div>
         </div>
-        <span class="pkg-impl-tag">Impl: 44 900 kr</span>
+        <span class="pkg-impl-tag">Impl: 59 900 kr</span>
         <div class="pkg-sep"></div>
         <ul class="pkg-rows">
           <li class="pkg-row"><span class="pkg-row-label">Brukere</span><span class="pkg-row-value">Inntil 60</span></li>
-          <li class="pkg-row"><span class="pkg-row-label">Møter / mnd</span><span class="pkg-row-value">250</span></li>
+          <li class="pkg-row"><span class="pkg-row-label">Møter / mnd</span><span class="pkg-row-value">250 <small style="font-weight:300;opacity:0.6;">≈ 60/uke</small></span></li>
           <li class="pkg-row"><span class="pkg-row-label">Dokumentanalyser</span><span class="pkg-row-value">2 000</span></li>
           <li class="pkg-row"><span class="pkg-row-label">Agenthandlinger</span><span class="pkg-row-value">20 000</span></li>
           <li class="pkg-row"><span class="pkg-row-label">RAG-søk</span><span class="pkg-row-value">8 000</span></li>
           <li class="pkg-row"><span class="pkg-row-label">Data</span><span class="pkg-row-value">500 GB</span></li>
         </ul>
-        <div class="pkg-foot">
-          <span class="pkg-foot-label">Effektiv pris / bruker</span>
-          <span class="pkg-foot-value">482 kr</span>
+        <div class="pkg-persona">
+          <div class="pkg-persona-label">Passer for</div>
+          <div class="pkg-persona-text">Byggefirma, ingeniørselskap eller etablert SMB med 20–60 ansatte som vil automatisere prosesser på tvers av avdelinger.</div>
         </div>
       </div>
 
       <!-- ORGANISASJON -->
       <div class="pkg-card tier-4">
         <div class="pkg-name">Organisasjon</div>
-        <div class="pkg-tagline">For kommuner og større virksomheter</div>
+        <div class="pkg-tagline">Enterprise-kapasitet med SLA-garanti</div>
         <div class="pkg-price-block">
-          <div class="pkg-price">59 900</div>
+          <div class="pkg-price">74 900</div>
           <div class="pkg-price-unit">kr / måned eks. mva</div>
         </div>
-        <span class="pkg-impl-tag">Impl: 74 900 kr</span>
+        <span class="pkg-impl-tag">Impl: 99 900 kr</span>
         <div class="pkg-sep"></div>
         <ul class="pkg-rows">
           <li class="pkg-row"><span class="pkg-row-label">Brukere</span><span class="pkg-row-value">Inntil 150</span></li>
-          <li class="pkg-row"><span class="pkg-row-label">Møter / mnd</span><span class="pkg-row-value">600</span></li>
+          <li class="pkg-row"><span class="pkg-row-label">Møter / mnd</span><span class="pkg-row-value">600 <small style="font-weight:300;color:var(--muted);">≈ 150/uke</small></span></li>
           <li class="pkg-row"><span class="pkg-row-label">Dokumentanalyser</span><span class="pkg-row-value">5 000</span></li>
           <li class="pkg-row"><span class="pkg-row-label">Agenthandlinger</span><span class="pkg-row-value">75 000</span></li>
           <li class="pkg-row"><span class="pkg-row-label">RAG-søk</span><span class="pkg-row-value">25 000</span></li>
           <li class="pkg-row"><span class="pkg-row-label">Data</span><span class="pkg-row-value">2 TB</span></li>
         </ul>
-        <div class="pkg-foot">
-          <span class="pkg-foot-label">Effektiv pris / bruker</span>
-          <span class="pkg-foot-value">399 kr</span>
+        <div class="pkg-persona">
+          <div class="pkg-persona-label">Passer for</div>
+          <div class="pkg-persona-text">Kommune, fylke eller større privat virksomhet med 50–150 ansatte med behov for compliance, DPIA og dedikert onboarding.</div>
         </div>
       </div>
 
@@ -1415,14 +1444,14 @@ footer {
         <tr>
           <td>Byggefirma, 40 ansatte + utvidet</td>
           <td><span class="t-badge">Struktur +</span></td>
-          <td><span class="t-price">33 900</span> kr</td>
-          <td>~ 452 900 kr</td>
+          <td><span class="t-price">39 900</span> kr</td>
+          <td>~ 538 700 kr</td>
         </tr>
         <tr>
           <td>Mellomstor kommune, 100 ansatte</td>
           <td><span class="t-badge">Organisasjon</span></td>
-          <td><span class="t-price">59 900</span> kr</td>
-          <td>~ 793 700 kr</td>
+          <td><span class="t-price">74 900</span> kr</td>
+          <td>~ 998 700 kr</td>
         </tr>
         <tr>
           <td>Nasjonalt konsern, 500+ ansatte</td>
